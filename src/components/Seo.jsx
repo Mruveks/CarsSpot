@@ -2,8 +2,8 @@ import React from "react";
 
 const Seo = () => {
   return (
-    <div className="flex bg-bg-secondary text-white py-[88px] sm:px-4">
-      <section className="flex sm:flex-col xl:w-container-xl lg:w-container-lg sm:w-container-sm justify-between gap-20 text-left mx-auto">
+    <div id="faq" className="flex bg-bg-secondary text-white py-[88px] sm:px-4 md:px-10">
+      <section className="flex sm:flex-col lg:w-container-lg md:w-container-md sm:w-container-sm justify-between gap-20 text-left mx-auto">
         <div className="flex flex-col gap-4 justify-start text-left">
           <p id="Follow us on social" className="bold uppercase">
             Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.

@@ -10,7 +10,7 @@ const Hero = () => {
       <VectorElement />
 
       {/* Główny kontener */}
-      <article className="grid grid-cols-2 sm:grid-cols-1 sm:w-container-sm lg:w-container-lg mx-auto h-[343px]">
+      <article className="grid grid-cols-2 sm:grid-cols-1 sm:w-container-sm lg:w-container-lg mx-auto h-[343px] z-50">
         <div className="flex flex-col gap-12">
           <span className="flex flex-col gap-[32px]">
             <h1 className="lg:text-hero-header-lg md:text-hero-header-md sm:text-hero-header-sm font-bebas font-normal text-black z-50">
@@ -36,7 +36,7 @@ const Hero = () => {
       <img
         src={HeroPng}
         alt="hero"
-        className="absolute w-[1064px] sm:h-fit md:j lg:h-[404.37px] sm:top-[480px] lg:top-[328px] right-0 z-50"
+        className="absolute z-10 w-[1064px] sm:h-fit lg:h-[404.37px] sm:top-[480px] lg:top-[328px] right-0"
       />
       <img
         src={cien}

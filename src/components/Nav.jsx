@@ -13,9 +13,13 @@ const Nav = () => {
         </div>
 
         {/* Linki nawigacyjne */}
-        <div className="h-[24px] flex justify-between gap-6 text-nav z-50">
-          <span className="w-fit">Galeria zdjęć</span>
-          <span className="w-[24px]">FaQ</span>
+        <div className="h-[24px] min-w-fit flex justify-between gap-6 text-nav z-50">
+          <a href="#gallery" className="cursor-pointer">
+            Galeria zdjęć
+          </a>
+          <a href="#faq" className="cursor-pointer">
+            FaQ
+          </a>
         </div>
 
         {/* Przycisk */}

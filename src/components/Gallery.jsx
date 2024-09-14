@@ -41,7 +41,7 @@ const Gallery = () => {
   return (
     <>
       {/* Tytuł */}
-      <div className="flex flex-col lg:w-[1264px] sm:pt-0 mx-auto pt-20 gap-6 sm:px-4 md:px-16">
+      <div id="gallery" className="flex flex-col lg:w-[1264px] sm:pt-0 mx-auto pt-20 gap-6 sm:px-4 md:px-16">
         <span>
           <p className="lg:text-header-tagline-lg md:text-header-tagline-md sm:text-header-tagline-sm font-roboto-condensed text-blue">
             Prezentacja firmy
