@@ -1,5 +1,5 @@
 import React from "react";
-import HeroPng from "../assets/hero.png";
+import HeroPng from "../assets/Hero.png";
 import VectorElement from "./VectorElement";
 import cien from "../assets/cien.png";
 
