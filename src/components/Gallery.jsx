@@ -9,21 +9,16 @@ const Gallery = () => {
   const images = [Car1, Car2, Car3];
 
   const handleDotClick = (index) => {
-    if (index >= images.length) {
-      setCurrentIndex(0);
-    } else {
-      setCurrentIndex(index);
-    }
+    setCurrentIndex(index >= images.length ? 0 : index);
   };
- 
+
   const updateSlideWidth = () => {
     const screenWidth = window.innerWidth;
-    console.log('Current screen width:', screenWidth);
+    console.log("Current screen width:", screenWidth);
 
-    console.log(screenWidth)
     if (screenWidth <= 640) {
       setSlideWidth(screenWidth); // sm
-    } else if (screenWidth >= 641 && screenWidth <= 1439) {
+    } else if (screenWidth < 1440) {
       setSlideWidth(550); // md
     } else {
       setSlideWidth(664); // lg
@@ -43,15 +38,15 @@ const Gallery = () => {
       {/* Tytuł */}
       <div id="gallery" className="flex flex-col lg:w-[1264px] sm:pt-0 mx-auto pt-20 gap-6 sm:px-4 md:px-16">
         <span>
-          <p className="lg:text-header-tagline-lg md:text-header-tagline-md sm:text-header-tagline-sm font-roboto-condensed text-blue">
+          <p className="font-roboto-condensed text-blue lg:text-header-tagline-lg md:text-header-tagline-md sm:text-header-tagline-sm">
             Prezentacja firmy
           </p>
-          <p className="lg:text-header-stay-updated-lg md:text-header-stay-updated-md sm:text-header-stay-updated-sm font-bebas">
+          <p className="font-bebas lg:text-header-stay-updated-lg md:text-header-stay-updated-md sm:text-header-stay-updated-sm">
             Zobacz naszą galerię zdjęć
           </p>
         </span>
         <span className="flex flex-row gap-12">
-          <p className="lg:text-header-cta-lg md:text-header-cta-md sm:text-header-cta-sm text-blue">
+          <p className="text-blue lg:text-header-cta-lg md:text-header-cta-md sm:text-header-cta-sm">
             Samochody osobowe
           </p>
           <p className="lg:text-header-cta-lg md:text-header-cta-md sm:text-header-cta-sm">Samochody dostawcze</p>
@@ -70,7 +65,7 @@ const Gallery = () => {
               key={index}
               src={image}
               alt={`Image ${index + 1}`}
-              className="lg:h-[446px] lg:w-[600px] sm:h-[300px] sm:w-[screen] object-cover"
+              className="object-cover lg:h-[446px] lg:w-[600px] sm:h-[300px] sm:w-[screen]"
             />
           ))}
         </div>

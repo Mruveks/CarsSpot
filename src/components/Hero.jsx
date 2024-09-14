@@ -13,19 +13,25 @@ const Hero = () => {
       <article className="grid grid-cols-2 sm:grid-cols-1 sm:w-container-sm lg:w-container-lg mx-auto h-[343px] z-50">
         <div className="flex flex-col gap-12">
           <span className="flex flex-col gap-[32px]">
-            <h1 className="lg:text-hero-header-lg md:text-hero-header-md sm:text-hero-header-sm font-bebas font-normal text-black z-50">
+            <h1 className="font-bebas font-normal text-black z-50 lg:text-hero-header-lg md:text-hero-header-md sm:text-hero-header-sm">
               Sprzedajemy samochody z Europy
             </h1>
-            <p className="lg:text-hero-paragraph-lg md:text-hero-paragraph-md sm:text-hero-paragraph-sm font-roboto-condensed z-50">
+            <p className="font-roboto-condensed z-50 lg:text-hero-paragraph-lg md:text-hero-paragraph-md sm:text-hero-paragraph-sm">
               Kup komfortowy pojazd, aby każda podróż <br />
               była wyjątkowym przeżyciem.
             </p>
           </span>
           <span className="flex flex-row gap-6">
-            <button className="w-[158px] h-[47px] text-button rounded-lg bg-blue text-white z-50">
+            <button
+              className="w-[158px] h-[47px] text-button rounded-lg bg-blue text-white z-50"
+              aria-label="Zobacz zdjęcia samochodów"
+            >
               Zobacz zdjęcia
             </button>
-            <button className="w-[158px] h-[47px] text-button rounded-lg bg-white text-blue border border-blue z-50">
+            <button
+              className="w-[158px] h-[47px] text-button rounded-lg bg-white text-blue border border-blue z-50"
+              aria-label="Zadzwoń do nas"
+            >
               Zadzwoń do nas
             </button>
           </span>
@@ -35,13 +41,15 @@ const Hero = () => {
       {/* Img samochodów oraz cień */}
       <img
         src={HeroPng}
-        alt="hero"
-        className="absolute z-10 w-[1064px] sm:h-fit lg:h-[404.37px] sm:top-[480px] lg:top-[328px] right-0"
+        alt="Zdjęcie samochodu z naszej oferty"
+        loading="lazy"
+        className="absolute z-10 w-[1064px] lg:h-[404.37px] sm:h-fit sm:top-[480px] lg:top-[328px] right-0"
       />
       <img
         src={cien}
-        alt="hero"
-        className="absolute w-[1064px] sm:h-fit lg:h-[404.37px] sm:top-[480px] lg:top-[328px] right-0"
+        alt="Cień pod samochodem"
+        loading="lazy"
+        className="absolute w-[1064px] lg:h-[404.37px] sm:h-fit sm:top-[480px] lg:top-[328px] right-0"
       />
     </div>
   );
